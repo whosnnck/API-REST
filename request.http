@@ -1,0 +1,32 @@
+###
+POST http://localhost:9000/api/game HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Mortal Kombat 1",
+    "genero" : "peleas",
+    "pgi" : "M +17",
+    "resumen" : "Insertar resumen",
+    "calificacion" : 8,
+    "comentario" : "Juegazo"
+}
+
+###
+GET http://localhost:9000/api/game HTTP/1.1
+
+###
+GET http://localhost:9000/api/game/651a53eb8c577abc34ec3413 HTTP/1.1
+
+###
+PUT  http://localhost:9000/api/game/651a53eb8c577abc34ec3413 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Mortal Kombat 1",
+    "genero" : "peleas",
+    "pgi" : "M +17",
+    "resumen" : "Insertar resumen",
+    "calificacion" : 8,
+    "comentario" : "Juego de peleas"
+}
+
