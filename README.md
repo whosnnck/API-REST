@@ -23,3 +23,10 @@ Para obtener una copia local del repositorio, usa el siguiente comando:
 ```bash
 git clone https://github.com/whosnnck/API-REST.git
 cd API-REST
+
+2. Crear entorno virtual (opcional pero recomendado)
+python -m venv venv
+source venv/bin/activate    # En Linux/Mac
+venv\Scripts\activate       # En Windows
+
+
