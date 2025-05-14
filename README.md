@@ -65,6 +65,15 @@ La API estará disponible en: `http://127.0.0.1:5000/`
 | PUT    | /productos/<id>    | Actualizar un producto existente  |
 | DELETE | /productos/<id>    | Eliminar un producto             
 
-
-
+📂 Estructura del Proyecto
+```bash
+API-REST/
+├── app.py            # Archivo principal de la aplicación Flask
+├── requirements.txt  # Dependencias necesarias
+├── models.py         # Definición de los modelos de datos
+├── database.db       # Base de datos SQLite (se genera automáticamente)
+└── README.md         # Este archivo
+```
+🛠️ Pruebas
+Para probar los endpoints de la API, puedes utilizar herramientas como Postman o realizar peticiones desde la terminal utilizando curl o httpie. Asegúrate de que la API esté en ejecución antes de realizar las pruebas.
 
