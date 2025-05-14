@@ -23,10 +23,48 @@ Para obtener una copia local del repositorio, usa el siguiente comando:
 ```bash
 git clone https://github.com/whosnnck/API-REST.git
 cd API-REST
-
-2. Crear entorno virtual (opcional pero recomendado)
+```
+### 2. Crear entorno virtual (opcional pero recomendado)
+```bash
 python -m venv venv
 source venv/bin/activate    # En Linux/Mac
 venv\Scripts\activate       # En Windows
+```
+Para activar el entorno virtual:
+
+- En Linux/Mac:
+```bash
+source venv/bin/activate
+```
+- En Windows
+```bash
+venv\Scripts\activate
+```
+### 3. Instalar dependencias
+Instala las dependencias necesarias utilizando el archivo requirements.txt
+```bash
+pip install -r requirements.txt
+```
+### 4. Ejecutar la API
+Para iniciar la API, ejecuta:
+```bash
+python app.py
+```
+
+La API estará disponible en: `http://127.0.0.1:5000/`
+
+---
+
+## 📚 Endpoints Principales
+
+| Método | Endpoint           | Descripción                       |
+|--------|--------------------|-----------------------------------|
+| GET    | /productos         | Listar todos los productos        |
+| GET    | /productos/<id>    | Obtener un producto por ID        |
+| POST   | /productos         | Crear un nuevo producto           |
+| PUT    | /productos/<id>    | Actualizar un producto existente  |
+| DELETE | /productos/<id>    | Eliminar un producto             
+
+
 
 
